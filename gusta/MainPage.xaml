@@ -2,6 +2,42 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="gusta.MainPage">
+ <Grid>
+    
+   <Image Source="menu.png"
+          Opacity=".8"
+          Aspect="AspectFill"/>
+     
+     
+     <VerticalStackLayout
+         VerticalOptions="End"
+         Spacing="10"
+         Margin="15, 0, 15, 45">
 
+         <Button Text="iniciar"
+                 HeightRequest="50"
+                 CornerRadius="25"
+                 BackgroundColor="#e9d9c4"
+                 TextColor="Black"
+                 Margin="0,0,0,10"
+                 FontSize="18"/>
+        <Button Text="Preferência"
+                 HeightRequest="50"
+                 CornerRadius="25"
+                 BackgroundColor="#e9d9c4"
+                 TextColor="Black"
+                 Margin="0,0,0,10"
+                 FontSize="18"/>
 
+        <Button Text="Sobre"
+                 HeightRequest="50"
+                 CornerRadius="25"
+                 BackgroundColor="#e9d9c4"
+                 TextColor="Black"
+                 Margin="0,0,0,10"
+                 FontSize="18"/>
+
+     </VerticalStackLayout>
+
+ </Grid>
 </ContentPage>

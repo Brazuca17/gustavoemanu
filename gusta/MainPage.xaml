@@ -5,7 +5,7 @@
  <Grid>
     
    <Image Source="menu.png"
-          Opacity=".8"
+         
           Aspect="AspectFill"/>
      
      
@@ -14,28 +14,27 @@
          Spacing="10"
          Margin="15, 0, 15, 45">
 
-         <Button Text="iniciar"
-                 HeightRequest="50"
-                 CornerRadius="25"
-                 BackgroundColor="#e9d9c4"
-                 TextColor="Black"
-                 Margin="0,0,0,10"
-                 FontSize="18"/>
-        <Button Text="Preferência"
-                 HeightRequest="50"
-                 CornerRadius="25"
-                 BackgroundColor="#e9d9c4"
-                 TextColor="Black"
-                 Margin="0,0,0,10"
-                 FontSize="18"/>
 
-        <Button Text="Sobre"
+
+        <Button Text="iniciar"
+                Clicked="IrParaJogo"
                  HeightRequest="50"
                  CornerRadius="25"
-                 BackgroundColor="#e9d9c4"
+                 BackgroundColor="#a8b178"
                  TextColor="Black"
                  Margin="0,0,0,10"
-                 FontSize="18"/>
+                 FontSize="18"
+                 BorderColor="Black"
+                 />
+        <Button Text="Sobre"
+                
+                 HeightRequest="50"
+                 CornerRadius="25"
+                 BackgroundColor="#a8b178"
+                 TextColor="Black"
+                 Margin="0,0,0,10"
+                 FontSize="18"
+                 BorderColor="Black"/>
 
      </VerticalStackLayout>
 

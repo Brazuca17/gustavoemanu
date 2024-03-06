@@ -6,39 +6,60 @@
 
 <Grid> 
 
-   <Image Source="menu.png"
+<Image Source="pageum.png"
           Aspect="AspectFill"/>
-
-    <Frame BackgroundColor="Black"
+ 
+<VerticalStackLayout
+         VerticalOptions="Start"
+         Spacing="10"
+         Margin="15, 0, 15, 45">
+       
+        <Frame BackgroundColor="gray"
            CornerRadius="20"
+           Opacity=".6"
+           HeightRequest="350"
            Margin="5,10"
            VerticalOptions="Fill">
 
-    <Label Text="oi"
-            TextColor="Black"
+      <Label Text="TESTE"
+            TextColor="White"
             LineHeight="1.2"
             HorizontalOptions="Center"
             HorizontalTextAlignment="Center"
             VerticalOptions="Center"
             FontSize="20"
             FontFamily="CachetStdBold"/>
-    </Frame>
+            
+        </Frame>
+
+       <Button Text="PROXIMO"
+                BorderWidth="2"
+                HeightRequest="50"
+                CornerRadius="25"
+                BackgroundColor="gray"
+                TextColor="Black"
+                Margin="0,0,0,10"
+                FontSize="18"
+                BorderColor="Black"/>
+
+        <Button Text="VOLTAR"
+                Clicked="voltarmenu"
+                BorderWidth="2"
+                HeightRequest="50"
+                CornerRadius="25"
+                BackgroundColor="gray"
+                TextColor="Black"
+                Margin="0,0,0,10"
+                FontSize="18"
+                BorderColor="Black"/>
+
+
+
+
+
+
+</VerticalStackLayout>
+
 </Grid>
-    <VerticalStackLayout
-    VerticalOptions="End"
-         Spacing="10"
-         Margin="15, 0, 15, 45">
-    
-    <Button Text="Voltar"
-                 Clicked="voltarmenu"
-                 HeightRequest="50"
-                 CornerRadius="25"
-                 BackgroundColor="#e9d9c4"
-                 TextColor="Black"
-                 Margin="0,0,0,10"
-                 FontSize="18"/>
-
-    </VerticalStackLayout>
-
 
 </ContentPage>

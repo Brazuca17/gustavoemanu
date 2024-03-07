@@ -6,12 +6,11 @@
  
  <Grid>
     
-   <Image Source="menu.png"
-         
+        <Image Source="menu.png"
           Aspect="AspectFill"/>
      
      
-     <VerticalStackLayout
+<VerticalStackLayout
          VerticalOptions="End"
          Spacing="10"
          Margin="15, 0, 15, 45">
@@ -30,7 +29,8 @@
                 BorderColor="Black"/>
                 
         <Button Text="Sobre"
-                BorderWidth="2"
+                Clicked="Botaosobre"
+                 BorderWidth="2"
                  HeightRequest="50"
                  CornerRadius="25"
                  BackgroundColor="#a8b178"
@@ -39,7 +39,59 @@
                  FontSize="18"
                  BorderColor="Black"/>
 
-     </VerticalStackLayout>
+</VerticalStackLayout>  
 
- </Grid>
+
+<VerticalStackLayout>
+
+
+    <Frame x:Name="sobre" 
+           IsVisible="false"
+           BorderColor="Black"
+           HeightRequest="600"
+           CornerRadius="20"
+           BackgroundColor="#a8b178"
+           HorizontalOptions="Fill"
+           VerticalOptions="Fill">
+
+          <VerticalStackLayout
+              VerticalOptions="End"
+              Spacing="10"
+              Margin="15, 0, 15, 45">
+        
+    <Label    Text="Sobre"
+              TextColor="black"
+              Margin="20"
+              FontSize="40"
+              VerticalOptions="Start"
+              HorizontalOptions="Center"
+              HorizontalTextAlignment="Center"/>
+
+        <Label Text="hfgjhdfaghafjaghdfbsafghsdafdgfhdsafgdshafgsdfhgsdfjkshdafsgdafuisdaf"
+               CharacterSpacing="1"
+               LineHeight="1.5"
+               TextColor="White"
+               HorizontalOptions="Center"
+               HorizontalTextAlignment="Center"
+               VerticalOptions="Center"
+               FontSize="20" />
+
+        <Button Text="voltar"
+                Clicked="voltarmenu"
+                 BorderWidth="2"
+                 HeightRequest="50"
+                 CornerRadius="25"
+                 VerticalOptions="End"
+                 BackgroundColor="#a8b178"
+                 TextColor="Black"
+                 Margin="0,0,0,10"
+                 FontSize="18"
+                 BorderColor="Black"/>
+   </VerticalStackLayout>
+</Frame>
+
+ 
+</VerticalStackLayout>
+</Grid>
+
 </ContentPage>

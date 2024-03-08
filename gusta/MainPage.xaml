@@ -52,28 +52,33 @@
            CornerRadius="20"
            BackgroundColor="#a8b178"
            HorizontalOptions="Fill"
-           VerticalOptions="Fill">
+           VerticalOptions="Center">
 
-          <VerticalStackLayout
-              VerticalOptions="End"
-              Spacing="10"
-              Margin="15, 0, 15, 45">
-        
+          <Grid>
+           <Grid.RowDefinitions>
+          <RowDefinition Height="90"/>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+
+
     <Label    Text="Sobre"
-              TextColor="black"
-              Margin="20"
+              TextColor="black"  
               FontSize="40"
+              FontFamily="capafont"
               VerticalOptions="Start"
               HorizontalOptions="Center"
+              Grid.Row="0"
               HorizontalTextAlignment="Center"/>
 
-        <Label Text="hfgjhdfaghafjaghdfbsafghsdafdgfhdsafgdshafgsdfhgsdfjkshdafsgdafuisdaf"
+        <Label Text="Esse é um jogo feito por Gustavo Emanuel Cassins e Yasmin Vitória Linardi."
                CharacterSpacing="1"
-               LineHeight="1.5"
-               TextColor="White"
+                LineHeight="1.5"
+               TextColor="Black"
                HorizontalOptions="Center"
                HorizontalTextAlignment="Center"
                VerticalOptions="Center"
+               Grid.Row="1"
                FontSize="20" />
 
         <Button Text="voltar"
@@ -86,11 +91,13 @@
                  TextColor="Black"
                  Margin="0,0,0,10"
                  FontSize="18"
+                 Grid.Row="2"
                  BorderColor="Black"/>
-   </VerticalStackLayout>
-</Frame>
 
- 
+
+
+        </Grid>
+</Frame>
 </VerticalStackLayout>
 </Grid>
 

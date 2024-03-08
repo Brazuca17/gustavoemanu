@@ -11,17 +11,17 @@
  
 <VerticalStackLayout
          VerticalOptions="Start"
-         Spacing="10"
+         Spacing="15"
          Margin="15, 0, 15, 45">
        
         <Frame BackgroundColor="gray"
            CornerRadius="20"
            Opacity=".6"
-           HeightRequest="350"
+           HeightRequest="400"
            Margin="5,10"
            VerticalOptions="Fill">
 
-      <Label Text="TESTE"
+      <Label x:Name="labeldotexto"
             TextColor="White"
             LineHeight="1.2"
             HorizontalOptions="Center"
@@ -32,7 +32,9 @@
             
         </Frame>
 
-       <Button Text="PROXIMO"
+       <Button  x:Name="next"
+                Clicked="onnext"
+                Text="PROXIMO"
                 BorderWidth="2"
                 HeightRequest="50"
                 CornerRadius="25"
@@ -40,6 +42,7 @@
                 TextColor="Black"
                 Margin="0,0,0,10"
                 FontSize="18"
+                VerticalOptions="End"
                 BorderColor="Black"/>
 
         <Button Text="VOLTAR"
@@ -50,14 +53,74 @@
                 BackgroundColor="gray"
                 TextColor="Black"
                 Margin="0,0,0,10"
+                VerticalOptions="End"
                 FontSize="18"
                 BorderColor="Black"/>
+        <Button x:Name="buttonResposta01"
+            Clicked="OnButton01Clicked"
+            BackgroundColor="Gray"
+            TextColor="Black"
+            HeightRequest="50"
+            CornerRadius="25"
+            Margin="0,0,0,10"
+            FontSize="16"
+            HorizontalOptions="Fill"
+            Grid.Row="2"/>
+    <Button x:Name="buttonResposta02"
+            Clicked="OnButton02Clicked"
+            BackgroundColor="Gray"
+            TextColor="Black"
+            HeightRequest="50"
+            CornerRadius="25"
+            Margin="0,0,0,10"
+            FontSize="16"
+            HorizontalOptions="Fill"
+           
+            Grid.Row="3"/>
+    <Button x:Name="buttonResposta03"
+            Clicked="OnButton03Clicked"
+            BackgroundColor="Gray"
+            TextColor="Black"
+            HeightRequest="50"
+            CornerRadius="25"
+            Margin="0,0,0,10"
+            FontSize="16"
+            HorizontalOptions="Fill"
+            Grid.Row="4"/>        
 
 
 
+     <Frame x:Name="morte"
+           IsVisible="false"
+           BackgroundColor="gray"
+           CornerRadius="20"
+           Opacity=".6"
+           HeightRequest="400"
+           Margin="5,10"
+           VerticalOptions="Fill">
 
+      <VerticalStackLayout>
+        <Label Text="Game Over"
+              TextColor="White"
+              Margin="20"
+              FontSize="40"
+              FontFamily="Papyrus"
+              HorizontalOptions="Center"
+              HorizontalTextAlignment="Center"
+              VerticalOptions="Center"/>
 
-
+        <Button Text="Começar Novamente"
+                Clicked="perdeu"
+                BorderWidth="2"
+                HeightRequest="50"
+                CornerRadius="25"
+                BackgroundColor="gray"
+                TextColor="Black"
+                Margin="0,0,0,10"
+                FontSize="18"
+                VerticalOptions="End"
+                BorderColor="Black"/>
+      </VerticalStackLayout>       
 </VerticalStackLayout>
 
 </Grid>
